@@ -7,13 +7,15 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-   <div className="flex flex-col h-screen justify-between">
-      <div className="flex flex-row justify-between">
+   <div className="flex flex-col h-screen">
+      <div className="flex flex-row justify-between h-[90vh]">
         <Sidebar />
         <MainContent />
         <RightSidebar />
       </div>
-      <PlayerControls />
+
+       <PlayerControls />
+     
     </div>
   );
 }
