@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.icon {
+  @apply text-white text-4xl hover:text-blue-600 transition duration-300
+}
