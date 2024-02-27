@@ -8,7 +8,7 @@ import Head from 'next/head'
 export default function Home() {
   return (
    <div className="flex flex-col h-screen">
-      <div className="flex flex-row justify-between h-[90vh]">
+      <div className="flex flex-row justify-betweenx">
         <Sidebar />
         <MainContent />
         <RightSidebar />

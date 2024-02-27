@@ -14,6 +14,8 @@ import LocalFiles from "@mui/icons-material/FolderRounded";
 import LocalFilesOutlined from "@mui/icons-material/FolderOutlined";
 import { ReactElement, useState } from "react";
 import { SvgIconProps } from "@mui/material";
+import Image from "next/image"; 
+import albumImage from "../_assets/ranjan.png";
 
 type HoverIconProps = {
   OutlinedIcon: React.FC<SvgIconProps>;
@@ -39,11 +41,11 @@ function HoverIcon({ OutlinedIcon, FilledIcon, descriptor, ...props }: HoverIcon
 
 export default function Sidebar() {
   return (
-    <div className="w-[20vw] h-screen bg-gray-900 p-5 flex flex-col justify-between">
-      <div className="upper-box flex flex-col">
+    <div className="w-[20vw] bg-gray-900  flex flex-col justify-between min-h-[90vh]">
+      <div className="upper-box p-5">
         <div className="header flex flex-row justify-between items-center mb-6">
           <div className="wemsc-logo text-5xl font-extrabold text-indigo-500">
-            W {/*todo -> take this from image*/}
+            W 
           </div>
           <Burger className="icon hover:text-blue-600"/>
         </div>
@@ -88,8 +90,10 @@ export default function Sidebar() {
           />
         </div>
       </div>
-      <div className="lower-box">
-        {/* Placeholder for lower box content */}
+      <div className="lower box">
+        <Image src={albumImage} alt="album image"  objectFit="contain"/>
+          {/* <div className="bg-[url(_assets/ranjan.png)] w-full h-56 bg-contain  bg-center aspect-square"> */}
+          {/* </div> */}
       </div>
     </div>
   )
