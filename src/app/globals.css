@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --text-primary: #61636b;
+  --text-primary-dark: #94979e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +15,7 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+  
   }
 }
 
@@ -33,5 +36,13 @@ body {
 }
 
 .icon {
-  @apply text-white text-4xl hover:text-blue-600 transition duration-300
+  @apply text-white text-3xl group-hover:text-blue-600 transition duration-300 cursor-pointer
+}
+
+.icon-descriptor {
+  @apply text-lg text-secondary group-hover:text-blue-600 transition duration-300 cursor-pointer
+}
+
+.icon-box{
+  @apply flex flex-row items-center gap-4 mb-2 hover:text-blue-600 transition duration-300 w-[70%]
 }
