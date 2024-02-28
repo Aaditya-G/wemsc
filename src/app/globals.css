@@ -40,7 +40,7 @@ body {
 }
 
 .icon-descriptor {
-  @apply text-lg text-secondary group-hover:text-blue-600 transition duration-300 cursor-pointer
+  @apply text-sm text-secondary group-hover:text-blue-600 transition duration-300 cursor-pointer
 }
 
 .icon-box{

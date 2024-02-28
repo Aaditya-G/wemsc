@@ -43,14 +43,14 @@ export default function Sidebar() {
   return (
     <div className="w-[20vw] bg-gray-900  flex flex-col justify-between min-h-[90vh]">
       <div className="upper-box p-5">
-        <div className="header flex flex-row justify-between items-center mb-6">
+        <div className="header flex flex-row justify-between items-center mb-[0.1vh]">
           <div className="wemsc-logo text-5xl font-extrabold text-indigo-500">
             W 
           </div>
           <Burger className="icon hover:text-blue-600"/>
         </div>
-        <div className="features flex flex-col mb-4 gap-2">
-          <div className="text-md  font-light text-primary">
+        <div className="features flex flex-col my-4">
+          <div className="text-xs mb-2  font-light text-primary">
             FEATURES
           </div>
           <HoverIcon 
@@ -69,8 +69,8 @@ export default function Sidebar() {
             descriptor="Collections"
           />
         </div>
-        <div className="library mb-4 flex flex-col gap-2">
-          <div className="text-md font-light text-primary">
+        <div className="library mb-4 flex flex-col">
+          <div className="text-xs mb-2 font-light text-primary">
             LIBRARY
           </div>
           <HoverIcon 
