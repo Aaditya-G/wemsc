@@ -8,7 +8,9 @@ interface CardListProps {
 export const CardList = ({ cards, sectionTitle }: CardListProps) => {
   return (
     <div className="card-list mx-4">
-      <div>{sectionTitle}</div>
+      <div className="text-md mb-2 font-light text-primary  hover:font-bold hover:text-white transition-all duration-500">
+        {sectionTitle}
+      </div>
       <div className="cards ">
         {cards.map((card, index) => (
           <Card key={index} {...card} />

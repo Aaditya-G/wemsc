@@ -61,7 +61,9 @@ export default function Sidebar() {
           </div>
         </div>
         <div className="features flex flex-col my-4">
-          <div className="text-xs mb-2  font-light text-primary">FEATURES</div>
+          <div className="text-xs mb-2  font-light text-primary hover:scale-y-110 hover:text-white transition-all duration-500">
+            FEATURES
+          </div>
           <HoverIcon
             OutlinedIcon={HomeOutlined}
             FilledIcon={Home}
@@ -79,7 +81,9 @@ export default function Sidebar() {
           />
         </div>
         <div className="library mb-4 flex flex-col">
-          <div className="text-xs mb-2 font-light text-primary">LIBRARY</div>
+          <div className="text-xs mb-2 font-light text-primary hover:scale-y-110 hover:text-white transition-all duration-500">
+            LIBRARY
+          </div>
           <HoverIcon
             OutlinedIcon={DownloadOutlined}
             FilledIcon={Download}

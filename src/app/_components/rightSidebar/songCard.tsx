@@ -1,3 +1,5 @@
+import imageData from "@/app/_assets/pic2.jpg";
+
 import Image from "next/image";
 
 export interface CardProps {
@@ -9,11 +11,11 @@ export interface CardProps {
 
 export const Card: React.FC<CardProps> = ({ title, subtitle, image, time }) => {
   return (
-    <div className="card flex flex-row items-center text-white my-2 text-xs">
+    <div className="card flex flex-row items-center text-white my-2 text-xs  hover:text-blue-600 transition-all duration-300 hover:cursor-pointer">
       <Image
-        src={image}
+        src={imageData}
         alt={"alt"}
-        className="rounded-lg break-words mr-4"
+        className="break-words mr-4 aspect-square"
         width={25}
         height={25}
       />
