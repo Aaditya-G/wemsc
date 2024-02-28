@@ -16,10 +16,10 @@ export const Card: React.FC<CardProps> = ({ title, subtitle, image, time }) => {
         src={imageData}
         alt={"alt"}
         className="break-words mr-4 aspect-square"
-        width={25}
-        height={25}
+        width={32}
+        height={32}
       />
-      <div className="flex flex-col justify-between flex-1">
+      <div className="flex flex-col justify-between flex-1 my-1">
         <div>
           <div className=" font-bold">{title}</div>
           <div className="text-primary">{subtitle}</div>
