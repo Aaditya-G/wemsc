@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Burger from "@mui/icons-material/MenuOpenRounded";
 import Home from "@mui/icons-material/HomeRounded";
 import HomeOutlined from "@mui/icons-material/HomeOutlined";
@@ -14,7 +14,7 @@ import LocalFiles from "@mui/icons-material/FolderRounded";
 import LocalFilesOutlined from "@mui/icons-material/FolderOutlined";
 import { ReactElement, useState } from "react";
 import { SvgIconProps } from "@mui/material";
-import Image from "next/image"; 
+import Image from "next/image";
 import albumImage from "../_assets/ranjan.png";
 
 type HoverIconProps = {
@@ -23,17 +23,26 @@ type HoverIconProps = {
   descriptor: string;
 };
 
-function HoverIcon({ OutlinedIcon, FilledIcon, descriptor, ...props }: HoverIconProps) {
+function HoverIcon({
+  OutlinedIcon,
+  FilledIcon,
+  descriptor,
+  ...props
+}: HoverIconProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div 
+    <div
       className="group icon-box"
-      onMouseEnter={() => setIsHovered(true)} 
+      onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       {...props}
     >
-      {isHovered ? <FilledIcon className="icon"/> : <OutlinedIcon className="icon"/>}
+      {isHovered ? (
+        <FilledIcon className="icon" />
+      ) : (
+        <OutlinedIcon className="icon" />
+      )}
       <span className="icon-descriptor">{descriptor}</span>
     </div>
   );
@@ -41,60 +50,56 @@ function HoverIcon({ OutlinedIcon, FilledIcon, descriptor, ...props }: HoverIcon
 
 export default function Sidebar() {
   return (
-    <div className="w-[15vw] bg-bgp flex flex-col justify-between min-h-[85vh]">
+    <div className="w-[15vw] bg-bgp flex flex-col justify-between min-h-[88vh]">
       <div className="upper-box p-5 min-h-[50vh]">
         <div className="header flex flex-row justify-between items-center mb-[0.1vh]">
           <div className="wemsc-logo text-5xl mb-6 font-extrabold text-indigo-500">
-            W 
+            W
           </div>
-          <Burger className="icon hover:text-blue-600"/>
+          <Burger className="icon hover:text-blue-600" />
         </div>
         <div className="features flex flex-col my-4">
-          <div className="text-xs mb-2  font-light text-primary">
-            FEATURES
-          </div>
-          <HoverIcon 
-            OutlinedIcon={HomeOutlined} 
-            FilledIcon={Home} 
+          <div className="text-xs mb-2  font-light text-primary">FEATURES</div>
+          <HoverIcon
+            OutlinedIcon={HomeOutlined}
+            FilledIcon={Home}
             descriptor="Home"
           />
-          <HoverIcon 
-            OutlinedIcon={DiscoverOutlined} 
-            FilledIcon={Discover} 
+          <HoverIcon
+            OutlinedIcon={DiscoverOutlined}
+            FilledIcon={Discover}
             descriptor="Discover"
           />
-          <HoverIcon 
-            OutlinedIcon={CollectionsOutlined} 
-            FilledIcon={Collections} 
+          <HoverIcon
+            OutlinedIcon={CollectionsOutlined}
+            FilledIcon={Collections}
             descriptor="Collections"
           />
         </div>
         <div className="library mb-4 flex flex-col">
-          <div className="text-xs mb-2 font-light text-primary">
-            LIBRARY
-          </div>
-          <HoverIcon 
-            OutlinedIcon={DownloadOutlined} 
-            FilledIcon={Download} 
+          <div className="text-xs mb-2 font-light text-primary">LIBRARY</div>
+          <HoverIcon
+            OutlinedIcon={DownloadOutlined}
+            FilledIcon={Download}
             descriptor="Download"
           />
-          <HoverIcon 
-            OutlinedIcon={FavouritesOutlined} 
-            FilledIcon={Favourites} 
+          <HoverIcon
+            OutlinedIcon={FavouritesOutlined}
+            FilledIcon={Favourites}
             descriptor="Favourites"
           />
-          <HoverIcon 
-            OutlinedIcon={LocalFilesOutlined} 
-            FilledIcon={LocalFiles} 
+          <HoverIcon
+            OutlinedIcon={LocalFilesOutlined}
+            FilledIcon={LocalFiles}
             descriptor="Local Files"
           />
         </div>
       </div>
       <div className="lower box max-h=[20vh]">
-        <Image src={albumImage} alt="album image"  objectFit="cover"/>
-          {/* <div className="bg-[url(_assets/ranjan.png)] w-full h-56 bg-contain  bg-center aspect-square"> */}
-          {/* </div> */}
+        <Image src={albumImage} alt="album image" objectFit="cover" />
+        {/* <div className="bg-[url(_assets/ranjan.png)] w-full h-56 bg-contain  bg-center aspect-square"> */}
+        {/* </div> */}
       </div>
     </div>
-  )
+  );
 }

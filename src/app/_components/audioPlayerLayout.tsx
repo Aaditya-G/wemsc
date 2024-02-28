@@ -24,6 +24,7 @@ const AudioPlayerLayout = ({ songUrl }: { songUrl: string }) => {
 
   return (
     <div className="flex justify-between items-center p-4 text-white w-full">
+      {/*left side component*/}
       <div className="flex flex-row gap-5 px-5 justify-between items-start">
         <div className="flex flex-col">
           <div className="text-sm font-bold">Date</div>
@@ -38,12 +39,12 @@ const AudioPlayerLayout = ({ songUrl }: { songUrl: string }) => {
           </div>
         </div>
       </div>
-
-      <div className="flex-1 mx-4 w-[40vw]">
+      {/*center component*/}
+      <div className="">
         <AudioPlayerComponent songUrl={songUrl} />
       </div>
-
-      <div className="flex flex-row justify-center items-center gap-2 text-xs">
+      {/*right side component*/}
+      <div className="flex flex-row justify-center items-center gap-2">
         <div className="group">
           <VolumeUpIcon className="icon" />
         </div>

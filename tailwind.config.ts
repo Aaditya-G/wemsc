@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         primary: "var(--text-primary)",
         secondary: "var(--text-primary-dark)",
-        bgp: "var(--bakcground-primary)",
+        bgp: "var(--background-primary)",
         bgs: "var(--background-secondary)",
       },
     },
