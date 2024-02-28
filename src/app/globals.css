@@ -38,7 +38,7 @@ body {
 }
 
 .icon {
-  @apply text-white text-3xl group-hover:text-blue-600 transition duration-300 cursor-pointer
+  @apply text-white text-2xl group-hover:text-blue-600 transition duration-300 cursor-pointer
 }
 
 .icon-descriptor {
