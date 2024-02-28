@@ -3,8 +3,11 @@ import React from 'react';
 import AudioPlayerComponent from './audioPlayer';
 import Slider from '@mui/material/Slider';
 import IconButton from '@mui/material/IconButton';
-import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+import VolumeUpIcon from '@mui/icons-material/VolumeUpRounded';
 import VolumeDownIcon from '@mui/icons-material/VolumeDown';
+import MicIcon from '@mui/icons-material/MicRounded';
+import DevicesIcon from '@mui/icons-material/DevicesRounded';
+import SharingIcon from '@mui/icons-material/ShareRounded';
 
 const AudioPlayerLayout = ({ songUrl } : {songUrl : string}) => {
   const player:any = React.useRef(null);
@@ -18,7 +21,7 @@ const AudioPlayerLayout = ({ songUrl } : {songUrl : string}) => {
   };
 
   return (
-    <div className="flex justify-between items-center p-4 bg-black text-white w-full">
+    <div className="flex justify-between items-center p-4 text-white w-full">
       <div className="flex flex-col justify-center items-start">
         <span>Date</span>
         <span>Date</span>
@@ -28,10 +31,10 @@ const AudioPlayerLayout = ({ songUrl } : {songUrl : string}) => {
         <AudioPlayerComponent songUrl={songUrl} />
       </div>
 
-      <div className="flex flex-col justify-center items-center">
-        <IconButton aria-label="decrease volume">
-          <VolumeDownIcon />
-        </IconButton>
+      <div className="flex flex-row justify-center items-center gap-2">
+             <VolumeUpIcon />
+        
+   
         <Slider
           min={0}
           max={1}
@@ -40,10 +43,13 @@ const AudioPlayerLayout = ({ songUrl } : {songUrl : string}) => {
           onChange={handleVolumeChange}
           aria-labelledby="continuous-slider"
           className="w-24"
+          size='small'
         />
-        <IconButton aria-label="increase volume">
-          <VolumeUpIcon />
-        </IconButton>
+        <MicIcon/>
+        <DevicesIcon />
+        <SharingIcon />
+        
+
       </div>
     </div>
   );
