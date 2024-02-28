@@ -1,4 +1,4 @@
-import MainContent from "./_components/mainContent";
+import MainContent from "./_components/mainContent/mainContent";
 import PlayerControls from "./_components/playerControl/playerControls";
 import RightSidebar from "./_components/rightSidebar/rightSidebar";
 import Sidebar from "./_components/leftSidebar/leftSidebar";
