@@ -41,10 +41,10 @@ function HoverIcon({ OutlinedIcon, FilledIcon, descriptor, ...props }: HoverIcon
 
 export default function Sidebar() {
   return (
-    <div className="w-[20vw] bg-gray-900  flex flex-col justify-between min-h-[90vh]">
-      <div className="upper-box p-5">
+    <div className="w-[15vw] bg-bgp flex flex-col justify-between min-h-[85vh]">
+      <div className="upper-box p-5 min-h-[50vh]">
         <div className="header flex flex-row justify-between items-center mb-[0.1vh]">
-          <div className="wemsc-logo text-5xl font-extrabold text-indigo-500">
+          <div className="wemsc-logo text-5xl mb-6 font-extrabold text-indigo-500">
             W 
           </div>
           <Burger className="icon hover:text-blue-600"/>
@@ -90,8 +90,8 @@ export default function Sidebar() {
           />
         </div>
       </div>
-      <div className="lower box">
-        <Image src={albumImage} alt="album image"  objectFit="contain"/>
+      <div className="lower box max-h=[20vh]">
+        <Image src={albumImage} alt="album image"  objectFit="cover"/>
           {/* <div className="bg-[url(_assets/ranjan.png)] w-full h-56 bg-contain  bg-center aspect-square"> */}
           {/* </div> */}
       </div>
