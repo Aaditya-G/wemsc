@@ -1,3 +1,3 @@
 export const ProfileComponent = () => {
-  return <div>Profile</div>;
+  return <div className="mb-12">Profile</div>;
 };

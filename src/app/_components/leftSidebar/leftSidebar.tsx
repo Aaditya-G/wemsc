@@ -52,11 +52,13 @@ export default function Sidebar() {
   return (
     <div className="w-[15vw] bg-bgp flex flex-col justify-between min-h-[88vh]">
       <div className="upper-box p-5 min-h-[50vh]">
-        <div className="header flex flex-row justify-between items-center mb-[0.1vh]">
-          <div className="wemsc-logo text-5xl mb-6 font-extrabold text-indigo-500">
+        <div className="header flex flex-row justify-between items-center">
+          <span className="wemsc-logo text-3xl mb-2 font-extrabold text-indigo-700">
             W
+          </span>
+          <div className="div">
+            <Burger className="icon hover:text-blue-600" />
           </div>
-          <Burger className="icon hover:text-blue-600" />
         </div>
         <div className="features flex flex-col my-4">
           <div className="text-xs mb-2  font-light text-primary">FEATURES</div>

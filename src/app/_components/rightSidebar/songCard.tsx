@@ -20,7 +20,7 @@ export const Card: React.FC<CardProps> = ({ title, subtitle, image, time }) => {
       <div className="flex flex-col justify-between flex-1">
         <div>
           <div className=" font-bold">{title}</div>
-          <div className="">{subtitle}</div>
+          <div className="text-primary">{subtitle}</div>
         </div>
       </div>
       <p className=" text-gray-400">{time}</p>

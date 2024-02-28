@@ -23,7 +23,7 @@ const AudioPlayerLayout = ({ songUrl }: { songUrl: string }) => {
   };
 
   return (
-    <div className="flex justify-between items-center p-4 text-white w-full">
+    <div className="flex justify-between items-center px-4 text-white w-full">
       {/*left side component*/}
       <div className="flex flex-row gap-5 px-5 justify-between items-start">
         <div className="flex flex-col">

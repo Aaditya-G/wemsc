@@ -12,8 +12,9 @@ export default function Home() {
         <MainContent />
         <RightSidebar />
       </div>
-
-      <PlayerControls />
+      <div className="max-h-[12vh]">
+        <PlayerControls />
+      </div>
     </div>
   );
 }
