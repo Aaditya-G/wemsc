@@ -15,7 +15,7 @@ import LocalFilesOutlined from "@mui/icons-material/FolderOutlined";
 import { ReactElement, useState } from "react";
 import { SvgIconProps } from "@mui/material";
 import Image from "next/image";
-import albumImage from "../_assets/ranjan.png";
+import albumImage from "../../_assets/ranjan.png";
 
 type HoverIconProps = {
   OutlinedIcon: React.FC<SvgIconProps>;

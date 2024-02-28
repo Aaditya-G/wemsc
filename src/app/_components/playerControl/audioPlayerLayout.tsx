@@ -44,7 +44,7 @@ const AudioPlayerLayout = ({ songUrl }: { songUrl: string }) => {
         <AudioPlayerComponent songUrl={songUrl} />
       </div>
       {/*right side component*/}
-      <div className="flex flex-row justify-center items-center gap-2">
+      <div className="flex flex-row justify-center items-center gap-3">
         <div className="group">
           <VolumeUpIcon className="icon" />
         </div>

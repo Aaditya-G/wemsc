@@ -5,5 +5,5 @@ export default function PlayerControls() {
     <div className="flex items-center justify-between p-3 bg-bgp  text-white">
       <AudioPlayerLayout songUrl="music.mp3" />
     </div>
-  )
+  );
 }
