@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         <div className="albumName text-2xl font-extrabold text-black mt-4">
           TREASURE
         </div>
-        <div className="mt-4 bg-blue-600 p-4 rounded-2xl font-semibold hover:text-secondary">
+        <div className="mt-4 bg-blue-600 p-4 rounded-2xl font-semibold hover:text-black hover:bg-pink-100 hover:scale-110 transition-all duration-300">
           <button>LISTEN NOW</button>
         </div>
       </div>
