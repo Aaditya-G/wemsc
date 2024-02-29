@@ -11,8 +11,6 @@ const Card: React.FC<{ card: ICard }> = ({ card }) => {
           <Image
             src={pic3}
             alt="pic3"
-            width={300}
-            height={300}
             className="aspect-square rounded-2xl hover:opacity-70 transition-all duration-300"
           />
         </div>
