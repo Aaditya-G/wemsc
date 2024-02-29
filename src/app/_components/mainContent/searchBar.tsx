@@ -26,7 +26,7 @@ const SearchBar: React.FC = () => {
           }
           className="flex-grow rounded-full text-sm bg-white text-primary px-4 py-2"
           placeholder="Search for artists, songs, or albums"
-          inputProps={{ "aria-label": "search" }}
+          inputProps={{ "aria-label": "search", className: 'my-auto' }}
         />
       </div>
       <div className="group">

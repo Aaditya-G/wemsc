@@ -6,7 +6,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen font-sans">
       <div className="flex flex-row justify-betweenx max-h-[88vh]">
         <Sidebar />
         <MainContent />

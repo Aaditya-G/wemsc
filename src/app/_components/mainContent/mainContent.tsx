@@ -12,7 +12,7 @@ export default function MainContent() {
         <SearchBar />
         <div className="">
           <Hero />
-          <CardCarousel title="Trending" cards={trendingCards} />
+          <CardCarousel title="Hello , Aaditya" cards={trendingCards} />
           <CardCarousel title="New Releases" cards={newReleaseCards} />
           {/* <div className="h-[200vh] bg-blue-200"></div> */}
         </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
-    <div className="bg-bgh text-center p-6 rounded-2xl flex flex-row justify-between">
+    <div className="bg-bgh text-center p-6  mb-8 rounded-2xl flex flex-row justify-between">
       <div className="content flex flex-col items-start justify-between">
         <div className="title text-lg font-bold">New Album</div>
         <div className="songName text-6xl font-extrabold text-white text-left leading-tight">
