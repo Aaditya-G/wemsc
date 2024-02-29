@@ -18,6 +18,7 @@ const config: Config = {
         secondary: "var(--text-primary-dark)",
         bgp: "var(--background-primary)",
         bgs: "var(--background-secondary)",
+        bgh: "var(--background-hero)",
       },
     },
   },

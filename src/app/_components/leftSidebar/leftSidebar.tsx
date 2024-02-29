@@ -50,7 +50,7 @@ function HoverIcon({
 
 export default function Sidebar() {
   return (
-    <div className="w-[15vw] bg-bgp flex flex-col justify-between min-h-[88vh]">
+    <div className="w-[18vw] bg-bgp flex flex-col justify-between min-h-[88vh]">
       <div className="upper-box p-5 min-h-[50vh]">
         <div className="header flex flex-row justify-between items-center">
           <span className="wemsc-logo text-3xl mb-2 font-extrabold text-indigo-700">

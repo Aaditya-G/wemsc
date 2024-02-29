@@ -1,9 +1,25 @@
 import React from "react";
+import heropic from "../../_assets/heropic.png";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
-    <div className="bg-pink-500 text-center p-10">
-      huehue
+    <div className="bg-bgh text-center p-10 rounded-2xl flex flex-row justify-between">
+      <div className="content flex flex-col items-start gap-[1vh]">
+        <div className="title text-lg font-bold">New Album</div>
+        <div className="songName text-6xl font-extrabold text-white text-left leading-tight">
+          THE SECOND STEP: CHAPTER ONE
+        </div>
+        <div className="albumName text-lg font-extrabold text-primary mt-4">
+          TREASURE
+        </div>
+        <div className="listen-btn mt-4">
+          <button>LISTEN NOW</button>
+        </div>
+      </div>
+      <div className="image">
+        <Image src={heropic} alt="hero" width={600} height={400} />
+      </div>
     </div>
   );
 };
