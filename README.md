@@ -20,3 +20,6 @@ npm start
 ## Screenshots
 
 ![image](https://github.com/Aaditya-G/wemsc/assets/84654828/c1f77828-d58f-40cd-9242-c92f4cbfff54)
+
+![image](https://github.com/Aaditya-G/wemsc/assets/84654828/a274f746-ce9f-489e-be93-2e59c8e1b9ff)
+
