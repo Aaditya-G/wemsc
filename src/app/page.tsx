@@ -9,7 +9,7 @@ export default function Home() {
     <div className="flex flex-col h-screen font-sans">
       <div className="flex flex-row justify-betweenx max-h-[88vh]">
         <Sidebar />
-        <MainContent />
+        <MainContent name="Aaditya"/>
         <RightSidebar />
       </div>
       <div className="max-h-[12vh]">

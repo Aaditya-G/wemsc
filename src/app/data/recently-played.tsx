@@ -25,4 +25,5 @@ export const recentlyPlayed: CardProps[] = [
     image: "/images/loveagain.jpg",
     time: "2 hr ago",
   },
+  
 ];
