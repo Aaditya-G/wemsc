@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
     <div className="bg-bgh text-center p-6 m-8 rounded-xl flex flex-row justify-between">
       <div className="content flex flex-col items-start justify-between">
         <div className="title text-lg font-bold">New Album</div>
-        <div className="songName text-6xl font-extrabold text-white text-left leading-tight">
+        <div className="songName text-6xl font-extrabold bg-clip-text text-transparent text-left leading-tight bg-gradient-to-r from-cyan-400 via-indigo-500 to-blue-600">
           THE SECOND STEP: CHAPTER ONE
         </div>
         <div className="albumName text-2xl font-extrabold text-black mt-4">

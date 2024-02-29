@@ -1,3 +1,4 @@
+"use client";
 import MainContent from "./_components/mainContent/mainContent";
 import PlayerControls from "./_components/playerControl/playerControls";
 import RightSidebar from "./_components/rightSidebar/rightSidebar";
@@ -9,7 +10,7 @@ export default function Home() {
     <div className="flex flex-col h-screen font-sans">
       <div className="flex flex-row justify-betweenx max-h-[88vh]">
         <Sidebar />
-        <MainContent name="Aaditya"/>
+        <MainContent name="Aaditya" />
         <RightSidebar />
       </div>
       <div className="max-h-[12vh]">
