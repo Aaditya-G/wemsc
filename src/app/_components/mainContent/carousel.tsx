@@ -20,13 +20,11 @@ const CardCarousel: React.FC<ICarouselProps> = ({ title, cards }) => {
 
   useEffect(() => {
     checkScrollPosition();
-    // Add scroll event listener
     const refCurrent = carouselRef.current;
     refCurrent?.addEventListener("scroll", checkScrollPosition, {
       passive: true,
     });
     return () => {
-      // Clean up the event listener
       refCurrent?.removeEventListener("scroll", checkScrollPosition);
     };
   }, []);

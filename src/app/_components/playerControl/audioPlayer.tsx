@@ -1,6 +1,5 @@
 import React from "react";
 import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
-// Make sure to import the Tailwind CSS file
 import "react-h5-audio-player/lib/styles.css";
 import PlayArrow from "@mui/icons-material/PlayArrowRounded";
 import { PauseCircleFilled } from "@mui/icons-material";
