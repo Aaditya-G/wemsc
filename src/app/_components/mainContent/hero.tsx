@@ -4,16 +4,16 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
-    <div className="bg-bgh text-center p-6 m-8 rounded-2xl flex flex-row justify-between">
+    <div className="bg-bgh text-center p-6 m-8 rounded-xl flex flex-row justify-between">
       <div className="content flex flex-col items-start justify-between">
         <div className="title text-lg font-bold">New Album</div>
         <div className="songName text-6xl font-extrabold text-white text-left leading-tight">
           THE SECOND STEP: CHAPTER ONE
         </div>
-        <div className="albumName text-lg font-extrabold text-primary mt-4">
+        <div className="albumName text-2xl font-extrabold text-black mt-4">
           TREASURE
         </div>
-        <div className="listen-btn mt-4">
+        <div className="mt-4 bg-blue-600 p-4 rounded-2xl font-semibold hover:text-secondary">
           <button>LISTEN NOW</button>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import type { ICard } from "./interfaces";
 import pic3 from "@/app/_assets/pic3.jpg";
 import Image from "next/image";

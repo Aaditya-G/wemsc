@@ -25,7 +25,7 @@ export const Card: React.FC<CardProps> = ({ title, subtitle, image, time }) => {
           <div className="text-primary">{subtitle}</div>
         </div>
       </div>
-      <p className=" text-gray-400">{time}</p>
+      <p className="text-primary">{time}</p>
     </div>
   );
 };

@@ -31,9 +31,9 @@ const AudioPlayerComponent = ({ songUrl }: { songUrl: string }) => {
         customProgressBarSection={[RHAP_UI.PROGRESS_BAR]}
         customControlsSection={[
           RHAP_UI.ADDITIONAL_CONTROLS,
-          <ShuffleOutlined className="" />,
+          <ShuffleOutlined className="" key="shuffle" />,
           RHAP_UI.MAIN_CONTROLS,
-          <Loop className="" />,
+          <Loop className="" key="loop" />,
           RHAP_UI.VOLUME_CONTROLS,
         ]}
         customVolumeControls={[]}
