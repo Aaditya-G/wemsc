@@ -7,8 +7,8 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen font-sans">
-      <div className="flex flex-row justify-betweenx max-h-[88vh]">
+    <div className="flex flex-col h-screen font-sans scrollbar-hide">
+      <div className="flex flex-row justify-betweenx max-h-[87vh]">
         <Sidebar />
         <MainContent name="Aaditya" />
         <RightSidebar />
