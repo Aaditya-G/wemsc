@@ -8,8 +8,8 @@ interface CardListProps {
 export const CardList = ({ cards, sectionTitle }: CardListProps) => {
   return (
     <div className="card-list mx-4">
-      <div className="flex flex-row justify-between items-end">
-        <div className="text-base 4k:text-xl mb-4 font-semibold text-white  hover:shadow-lg hover:cursor-pointer hover:text-secondary transition-all duration-300">
+      <div className="flex flex-row mb-4 justify-between items-end">
+        <div className="text-base 4k:text-xl  font-semibold text-white  hover:shadow-lg hover:cursor-pointer hover:text-secondary transition-all duration-300">
           {sectionTitle}
         </div>
         <div className="text-xs text-secondary">see all</div>
