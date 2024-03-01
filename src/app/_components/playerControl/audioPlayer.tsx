@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import PlayArrow from "@mui/icons-material/PlayArrowRounded";
@@ -8,7 +8,28 @@ import { SkipPreviousRounded } from "@mui/icons-material";
 import ShuffleOutlined from "@mui/icons-material/ShuffleOutlined";
 import { Loop } from "@mui/icons-material";
 
+const useDynamicFontSize = () => {
+  const [fontSize, setFontSize] = useState("32px");
+
+  useEffect(() => {
+    const updateFontSize = () => {
+      const newSize = window.innerWidth > 2000 ? "48px" : "32px";
+      setFontSize(newSize);
+    };
+
+    // Update font size on mount and window resize
+    updateFontSize();
+    window.addEventListener("resize", updateFontSize);
+
+    // Cleanup listener
+    return () => window.removeEventListener("resize", updateFontSize);
+  }, []);
+
+  return fontSize;
+};
+
 const AudioPlayerComponent = ({ songUrl }: { songUrl: string }) => {
+  const fontSize = useDynamicFontSize();
   const player: any = React.useRef(null);
 
   const setVolume = (value: any) => {

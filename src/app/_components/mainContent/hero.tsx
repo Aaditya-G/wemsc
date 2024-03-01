@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
   return (
     <div className="bg-bgh text-center px-2 py-3 md:p-6 md:m-8 rounded-xl flex flex-row justify-between">
       <div className="content flex flex-col items-start justify-around lg:py-6">
-        <div className="text-[3vw] md:text-lg xl:text-xl 2xl:text-3xl 4k:text-5xl">
+        <div className="text-[3vw] md:text-lg xl:text-xl 2xl:text-3xl 4k:text-4xl">
           New Album
         </div>
         <div className="songName text-xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl 4k:text-8xl leading-tight 2xl:leading-tight font-extrabold bg-clip-text text-transparent text-left  bg-gradient-to-r from-cyan-600 via-indigo-600 to-blue-600">

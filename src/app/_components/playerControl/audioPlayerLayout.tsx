@@ -44,7 +44,7 @@ const AudioPlayerLayout = ({ songUrl }: { songUrl: string }) => {
     <div className="flex flex-row justify-between items-center md:px-4 text-white w-full">
       {/*left side component*/}
       <div className="flex flex-row gap-5 md:px-5 justify-between items-start">
-        <div className=" md-hidden">
+        <div className="md:hidden">
           {/*show only on mobile*/}
           <Image
             src={ranjan}
@@ -55,8 +55,8 @@ const AudioPlayerLayout = ({ songUrl }: { songUrl: string }) => {
           />
         </div>
         <div className="flex flex-col">
-          <div className="text-sm font-bold">Date</div>
-          <div className="text-xs">日付</div>
+          <div className="text-sm 4k:text-2xl font-bold">Date</div>
+          <div className="text-xs 4k:text-xl">日付</div>
         </div>
         <div className="icon-box flex flex-row xs:max-sm:hidden">
           <div className="group">

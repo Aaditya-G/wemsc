@@ -53,7 +53,7 @@ export default function Sidebar() {
     <div className="hidden md:flex w-[18vw] bg-bgp flex-col justify-between min-h-[88vh]">
       <div className="upper-box p-5 min-h-[50vh]">
         <div className="header flex flex-row justify-between items-center">
-          <span className="wemsc-logo text-3xl mb-2 font-extrabold text-indigo-700">
+          <span className="wemsc-logo text-3xl 4k:text-6xl mb-2 font-extrabold text-indigo-700">
             W
           </span>
           <div className="div">
@@ -61,7 +61,7 @@ export default function Sidebar() {
           </div>
         </div>
         <div className="features flex flex-col my-4">
-          <div className="text-xs mb-2  font-light text-primary hover:scale-y-110 hover:text-white transition-all duration-500">
+          <div className="text-xs 4k:text-lg mb-2  font-light text-primary hover:scale-y-110 hover:text-white transition-all duration-500">
             FEATURES
           </div>
           <HoverIcon
@@ -81,7 +81,7 @@ export default function Sidebar() {
           />
         </div>
         <div className="library mb-4 flex flex-col">
-          <div className="text-xs mb-2 font-light text-primary hover:scale-y-110 hover:text-white transition-all duration-500">
+          <div className="text-xs 4k:text-lg mb-2 font-light text-primary hover:scale-y-110 hover:text-white transition-all duration-500">
             LIBRARY
           </div>
           <HoverIcon
