@@ -3,14 +3,16 @@ import pic9 from "@/app/_assets/pic9.png";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
-import useSidebarStore from "../mainContent/mobileSidebarStore";
+import useSidebarStore from "../../store/mobileSidebarStore";
 
 export const ProfileComponent = ({ name }: { name: string }) => {
-  const setSidebarVisibility = useSidebarStore((state) => state.setSidebarVisibility);
+  const setSidebarVisibility = useSidebarStore(
+    (state) => state.setSidebarVisibility
+  );
 
   const handleCloseSidebar = () => {
     setSidebarVisibility(false);
-  }
+  };
   return (
     <div className="flex flex-row justify-between items-center space-x-3 text-white mx-4 my-8">
       <div className="flex flex-row items-center gap-4">
@@ -27,10 +29,7 @@ export const ProfileComponent = ({ name }: { name: string }) => {
       </div>
       <div className="icons flex flex-row">
         <div className="group">
-          <CloseOutlinedIcon 
-          className="icon" 
-          onClick={handleCloseSidebar}
-          />
+          <CloseOutlinedIcon className="icon" onClick={handleCloseSidebar} />
         </div>
       </div>
     </div>

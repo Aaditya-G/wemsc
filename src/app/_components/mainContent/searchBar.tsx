@@ -5,16 +5,16 @@ import SearchIcon from "@mui/icons-material/Search";
 import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
 import InputBase from "@mui/material/InputBase";
 import { InputAdornment } from "@mui/material";
-import useSidebarStore from "./mobileSidebarStore";
+import useSidebarStore from "../../store/mobileSidebarStore";
 
 const SearchBar: React.FC = () => {
-   const { setSidebarVisibility } = useSidebarStore();
+  const { setSidebarVisibility } = useSidebarStore();
 
-   const handleMenuclick = () => {
-     if (window.innerWidth < 800) {
-       setSidebarVisibility(true);
-     }
-   };
+  const handleMenuclick = () => {
+    if (window.innerWidth < 800) {
+      setSidebarVisibility(true);
+    }
+  };
 
   return (
     <div className="flex items-center justify-between py-8 ">

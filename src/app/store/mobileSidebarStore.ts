@@ -1,5 +1,5 @@
-import {create} from "zustand";
-import { SidebarState } from "./interfaces";
+import { create } from "zustand";
+import { SidebarState } from "../_components/mainContent/interfaces";
 
 const useSidebarStore = create<SidebarState>((set) => ({
   isSidebarVisible: false,
