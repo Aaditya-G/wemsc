@@ -9,7 +9,7 @@ import { InputAdornment } from "@mui/material";
 const SearchBar: React.FC = () => {
   return (
     <div className="flex items-center justify-between py-8 ">
-      <div className="flex items-center space-x-6">
+      <div className="items-center hidden md:flex space-x-6">
         <div className="group">
           <ArrowBackIosNewIcon className="text-white cursor-pointer icon" />
         </div>
@@ -17,7 +17,7 @@ const SearchBar: React.FC = () => {
           <ArrowForwardIosOutlinedIcon className="text-white cursor-pointer icon" />
         </div>
       </div>
-      <div className="flex flex-1 mx-4 max-w-[50vw] items-center justify-center">
+      <div className="flex flex-1  md:mx-4 max-w-[80vw] md:max-w-[50vw] items-center justify-center">
         <InputBase
           startAdornment={
             <InputAdornment position="start">
@@ -26,7 +26,7 @@ const SearchBar: React.FC = () => {
           }
           className="flex-grow rounded-full text-sm bg-white text-primary px-4 py-2"
           placeholder="Search for artists, songs, or albums"
-          inputProps={{ "aria-label": "search", className: 'my-auto' }}
+          inputProps={{ "aria-label": "search", className: "my-auto" }}
         />
       </div>
       <div className="group">

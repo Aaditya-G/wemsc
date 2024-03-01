@@ -18,7 +18,7 @@ const AudioPlayerComponent = ({ songUrl }: { songUrl: string }) => {
   };
 
   return (
-    <div className="min-w-[40vw] min-h-[10vh]">
+    <div className="min-w-[40vw] md:px-[15vw] min-h-[10vh]">
       <AudioPlayer
         style={{ backgroundColor: "#101011" }} // tailwind classes are not working here for some reason
         ref={player}
@@ -30,9 +30,9 @@ const AudioPlayerComponent = ({ songUrl }: { songUrl: string }) => {
         customProgressBarSection={[RHAP_UI.PROGRESS_BAR]}
         customControlsSection={[
           RHAP_UI.ADDITIONAL_CONTROLS,
-          <ShuffleOutlined className="" key="shuffle" />,
+          <ShuffleOutlined className="xs:max-sm:hidden" key="shuffle" />,
           RHAP_UI.MAIN_CONTROLS,
-          <Loop className="" key="loop" />,
+          <Loop className="xs:max-sm:hidden" key="loop" />,
           RHAP_UI.VOLUME_CONTROLS,
         ]}
         customVolumeControls={[]}

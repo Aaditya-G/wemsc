@@ -48,16 +48,16 @@ const CardCarousel: React.FC<ICarouselProps> = ({ title, cards }) => {
 
   return (
     <div className="flex flex-col my-4">
-      <div className="flex flex-row justify-between items-center mb-4 px-6">
-        <div className="text-2xl font-bold">{title}</div>
-        <div className="text-base text-primary hover:text-white transition-all duration-300 cursor-pointer">
+      <div className="flex flex-row justify-between items-center mb-2 md:mb-4 md:px-6">
+        <div className="md:text-2xl font-bold">{title}</div>
+        <div className="text-sm md:text-base text-primary hover:text-white transition-all duration-300 cursor-pointer">
           see all
         </div>
       </div>
 
-      <div className="flex flex-row items-center my-2">
+      <div className="flex flex-row items-center md:my-2">
         <div
-          className={`cursor-pointer -translate-x-2 ${
+          className={`cursor-pointer -translate-x-2 hidden md:flex ${
             isAtStart ? "opacity-0 pointer-events-none" : "opacity-100"
           }`}
           onClick={() => scroll("left")}
@@ -66,14 +66,14 @@ const CardCarousel: React.FC<ICarouselProps> = ({ title, cards }) => {
         </div>
         <div
           ref={carouselRef}
-          className="flex overflow-x-auto w-[70vw] gap-[1.3vw] scrollbar-hide"
+          className="flex overflow-x-auto md:w-[70vw] gap-[2vw] md:gap-[1.3vw] scrollbar-hide"
         >
           {cards.map((card) => (
             <Card key={card.id} card={card} />
           ))}
         </div>
         <div
-          className={`cursor-pointer translate-x-2 ${
+          className={`cursor-pointer translate-x-2 hidden md:flex ${
             isAtEnd ? "opacity-0 pointer-events-none" : "opacity-100"
           }`}
           onClick={() => scroll("right")}

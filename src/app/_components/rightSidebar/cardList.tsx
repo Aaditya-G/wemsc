@@ -7,7 +7,7 @@ interface CardListProps {
 
 export const CardList = ({ cards, sectionTitle }: CardListProps) => {
   return (
-    <div className="card-list mx-4 my-8">
+    <div className="card-list mx-4">
       <div className="text-base mb-4 font-semibold text-white  hover:shadow-lg hover:cursor-pointer hover:text-secondary transition-all duration-300">
         {sectionTitle}
       </div>

@@ -11,6 +11,8 @@ import DevicesIcon from "@mui/icons-material/DevicesRounded";
 import SharingIcon from "@mui/icons-material/ShareRounded";
 import FavouritesOutlined from "@mui/icons-material/FavoriteBorderRounded";
 import AddBoxRounded from "@mui/icons-material/AddBoxRounded";
+import Image from "next/image";
+import ranjan from "@/app/_assets/ranjan.png";
 
 const AudioPlayerLayout = ({ songUrl }: { songUrl: string }) => {
   const player: any = React.useRef(null);
@@ -39,14 +41,24 @@ const AudioPlayerLayout = ({ songUrl }: { songUrl: string }) => {
   };
 
   return (
-    <div className="flex justify-between items-center px-4 text-white w-full">
+    <div className="flex flex-row justify-between items-center md:px-4 text-white w-full">
       {/*left side component*/}
-      <div className="flex flex-row gap-5 px-5 justify-between items-start">
+      <div className="flex flex-row gap-5 md:px-5 justify-between items-start">
+        <div className=" md-hidden">
+          {/*show only on mobile*/}
+          <Image
+            src={ranjan}
+            alt="profile"
+            width={50}
+            height={50}
+            className="aspect-square"
+          />
+        </div>
         <div className="flex flex-col">
           <div className="text-sm font-bold">Date</div>
           <div className="text-xs">日付</div>
         </div>
-        <div className="icon-box flex flex-row">
+        <div className="icon-box flex flex-row xs:max-sm:hidden">
           <div className="group">
             <FavouritesOutlined className="icon" />
           </div>
@@ -56,11 +68,11 @@ const AudioPlayerLayout = ({ songUrl }: { songUrl: string }) => {
         </div>
       </div>
       {/*center component*/}
-      <div className="">
+      <div className="flex-1">
         <AudioPlayerComponent songUrl={songUrl} />
       </div>
       {/*right side component*/}
-      <div className="flex flex-row justify-center items-center gap-3">
+      <div className="xs:max-sm:hidden flex flex-row justify-center items-center gap-3">
         <div className="group" onClick={handleVolumeClick}>
           {volume === 0 ? (
             <VolumeOffIcon className="icon" />
