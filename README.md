@@ -1,6 +1,7 @@
 # Wemsc
 
-UI for a music player - https://wemsc-gamma.vercel.app/ built using NextJS and Tailwind CSS
+## Overview
+UI for a music player - https://wemsc-gamma.vercel.app/ built using NextJS and Tailwind CSS - inspired from [dribble](https://dribbble.com/shots/21514221-Wemsc-Music-Streaming-Desktop-App-Dark-Mode)
 
 ## Setup
 
